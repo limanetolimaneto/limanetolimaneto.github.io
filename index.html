@@ -5,6 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Neto | Full Stack Dev</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .project {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+
+    .project img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      margin-right: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .project-content {
+      max-width: 800px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -14,30 +39,86 @@
 
   <section>
     <h2>About Me</h2>
-    <p>I’m a web developer focused on building solid and efficient web apps using PHP (Laravel) and React. Passionate about clean code, practical design, and lifelong learning.</p>
+    <p>
+      I’m a web developer focused on building solid and efficient web apps using PHP (Laravel) and React.
+      Passionate about clean code, practical design, and lifelong learning.
+    </p>
   </section>
 
   <section>
-    <h2>Projects</h2>
-    <ul>
-      <li>
-          <strong>Getdata (React)</strong> – Local CRUD system using React + JSON server. 
-          <a href="https://github.com/..." target="_blank">GitHub</a>
-      </li>
+    <h2>Web Applications</h2>
 
-      <li>
-          <a href="https://github.com/limanetolimaneto/keyhpsafe" target="_blank">
-            <strong>Keyhpsafe (Full Stack – Laravel & React)</strong> 
-          </a>
-        A local task management tool developed to support community work involving the registration and analysis of criminal incidents and accidents. Built with Laravel and React, it operates offline and stores records in JSON files. The system allows users to create, update, delete, and filter entries, with a clean architecture and no user authentication.
-      </li>
-    </ul>
+    <div class="project">
+      <img src="images/keyhpsafe.png" alt="Keyhpsafe project image" />
+      <div class="project-content">
+        <a href="https://github.com/limanetolimaneto/keyhpsafe" target="_blank">
+          <strong>Keyhpsafe (Full Stack – Laravel & React)</strong>
+        </a>
+        <p>
+          A local task management tool developed to support community work involving the registration and
+          analysis of criminal incidents and accidents. Built with Laravel and React, it operates offline and
+          stores records in JSON files. The system allows users to create, update, delete, and filter entries,
+          with a clean architecture and no user authentication.
+        </p>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="images/getdata.png" alt="Getdata project image" />
+      <div class="project-content">
+        <a href="https://github.com/..." target="_blank">
+          <strong>Getdata (React)</strong>
+        </a>
+        <p>
+          Local CRUD system using React and JSON server. Designed for fast and simple data handling without
+          user login. Ideal for local personal or collaborative use.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Tools</h2>
+
+    <div class="project">
+      <img src="images/registerflow.png" alt="Register Flow image" />
+      <div class="project-content">
+        <a href="https://github.com/..." target="_blank">
+          <strong>Register Flow</strong>
+        </a>
+        <p>
+          A reusable flow component for registration processes, designed for easy integration into larger
+          systems. Includes validation logic, modular input components, and step-based form progression.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Experiments / Working Projects</h2>
+
+    <div class="project">
+      <img src="images/cyberboys.png" alt="Cyberboys project image" />
+      <div class="project-content">
+        <a href="https://github.com/limanetolimaneto/cyberboys" target="_blank">
+          <strong>Cyberboys (Experimental UI / Concept System)</strong>
+        </a>
+        <p>
+          An experimental system exploring interface behavior and intelligent interaction. Currently under
+          development, Cyberboys aims to test unconventional UI flows and future integrations with AI
+          features. The project is a creative playground for testing advanced logic and design prototypes.
+        </p>
+      </div>
+    </div>
+
   </section>
 
   <footer>
-    <p>Connect with me: 
+    <p>
+      Connect with me:
       <a href="https://github.com/limanetolimaneto" target="_blank">GitHub</a>
     </p>
   </footer>
 </body>
 </html>
+
