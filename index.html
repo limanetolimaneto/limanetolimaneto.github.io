@@ -6,6 +6,19 @@
   <title>Neto | Full Stack Dev</title>
   <link rel="stylesheet" href="style.css" />
   <style>
+    body {
+      font-family: sans-serif;
+      margin: 0 auto;
+      max-width: 900px;
+      padding: 20px;
+      color: #333;
+    }
+
+    header, footer {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
     .project {
       display: flex;
       align-items: flex-start;
@@ -28,6 +41,28 @@
     h2 {
       border-bottom: 2px solid #ddd;
       padding-bottom: 5px;
+      margin-top: 40px;
+    }
+
+    .project-content a {
+      color: #0366d6;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .project-content a:hover {
+      text-decoration: underline;
+    }
+
+    footer p {
+      font-size: 0.95em;
+    }
+
+    .last-updated {
+      text-align: center;
+      font-size: 0.8em;
+      color: #777;
+      margin-top: 20px;
     }
   </style>
 </head>
@@ -46,15 +81,16 @@
   </section>
 
   <section>
-    <h2> 💻 Web Applications</h2>
+    <h2>💻 Web Applications</h2>
+
     <div class="project">
-      <img src="images/keyhpsafe.png" alt="Keyhpsafe" />
+      <img src="images/keyhpsafe.png" alt="Keyhpsafe project preview" />
       <div class="project-content">
         <a href="https://github.com/limanetolimaneto/keyhpsafe" target="_blank">
           <strong>Keyhpsafe (Full Stack – Laravel & React)</strong>
         </a>
         <p>
-          Keyhpsafe is a local task management tool built with Laravel and React to support 
+          A local task management tool built with Laravel and React to support 
           community work in recording and analyzing criminal incidents and accidents. 
           It features user authentication (Laravel Sanctum), data storage in MySQL, 
           map-based zone control with React-Leaflet, PDF report generation (Laravel DomPDF), 
@@ -64,13 +100,13 @@
     </div>
 
     <div class="project">
-      <img src="images/getdata.png" alt="Getdata" />
+      <img src="images/getdata.png" alt="Getdata project preview" />
       <div class="project-content">
-        <a href="https://github.com/..." target="_blank">
+        <a href="#" title="Coming soon" target="_blank">
           <strong>Getdata (React)</strong>
         </a>
         <p>
-          Getdata is a lightweight local CRUD system, built entirely with React and an Express-based data layer. 
+          A lightweight local CRUD system, built entirely with React and an Express-based data layer. 
           It requires no user authentication, making it ideal for personal use or local collaborative environments.
         </p>
       </div>
@@ -78,9 +114,10 @@
   </section>
 
   <section>
-    <h2>  🛠️ Tools</h2>
+    <h2>🛠️ Tools</h2>
+
     <div class="project">
-      <img src="images/newProject.png" alt="newProject" />
+      <img src="images/newProject.png" alt="Register Flow UI component" />
       <div class="project-content">
         <a href="https://github.com/..." target="_blank">
           <strong>Register Flow</strong>
@@ -94,29 +131,32 @@
   </section>
 
   <section>
-    <h2> 🧪 Experiments / Working Projects</h2>
+    <h2>🧪 Experiments & Ongoing Projects</h2>
+
     <div class="project">
-      <img src="images/cyberchommie.png" alt="Cyberchommie" />
+      <img src="images/cyberchommie.png" alt="Cyberchommie concept system" />
       <div class="project-content">
         <a href="https://github.com/limanetolimaneto/cyberboys" target="_blank">
           <strong>Cyberchommie (Experimental UI / Concept System)</strong>
         </a>
         <p>
-          Cyberchommie is a gamified learning platform designed to support disengaged youth. 
-          It uses a task-based reward system where students earn virtual credits by completing challenges, which can be exchanged for handcrafted items. 
-          The project combines technology, music, and peer collaboration to promote engagement and meaningful learning.
+          Cyberchommie is a gamified learning platform created to engage disconnected youth. 
+          Through a task-based reward system, students earn credits by completing challenges and exchange them for handcrafted items. 
+          The project blends technology, music, and peer collaboration to promote meaningful learning experiences.
         </p>
       </div>
     </div>
-
   </section>
 
   <footer>
     <p>
       Connect with me:
       <a href="https://github.com/limanetolimaneto" target="_blank">GitHub</a>
+      <!-- | <a href="mailto:you@example.com">Email</a> -->
     </p>
+    <div class="last-updated">
+      Last updated: August 2025
+    </div>
   </footer>
 </body>
 </html>
-
