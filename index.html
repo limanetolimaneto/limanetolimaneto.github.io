@@ -21,9 +21,11 @@
 
     .top{
       display:flex;
-      
+      gap: 20px; 
     }
-    
+    .top div:last-child {
+      flex-grow: 1;
+    }
     .project {
       display: flex;
       align-items: flex-start;
@@ -82,7 +84,7 @@
       <div>
          <img src="images/foto.jpg" alt="photo" width="200"/>
       </div>
-      <div>
+      <div style="">
         <h1>Francisco Batista de Lima Neto</h1>
         <p>Building scalable APIs with clean architecture and performance focus</p>
         <ul style="list-style: none;">
