@@ -1,1 +1,316 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lima Neto | Backend Dev</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0 auto;
+      max-width: 900px;
+      padding: 20px;
+      color: #333;
+    }
+
+    header, footer {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .top{
+      display:flex;
+      gap: 20px; 
+    }
+    .top div:last-child {
+      flex-grow: 1;
+    }
+    .project {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 20px;
+      gap: 20px;
+    }
+
+    /* .project img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      margin-right: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    } */
+
+    .project-content {
+      max-width: 800px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+      margin-top: 40px;
+    }
+
+    .project-content a {
+      color: #0366d6;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .project-content a:hover {
+      text-decoration: underline;
+    }
+
+    footer p {
+      font-size: 0.95em;
+    }
+
+    .last-updated {
+      text-align: center;
+      font-size: 0.8em;
+      color: #777;
+      margin-top: 20px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain; 
+      object-position: left;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="top">
+      <div>
+         <img src="images/foto.jpg" alt="photo" width="200"/>
+      </div>
+      <div style="">
+        <h1>Francisco Batista de Lima Neto</h1>
+        <p>Designing scalable backend systems with distributed processing, clean architecture, and intelligent data workflows</p>
+        <ul style="list-style: none;">
+          <li>Laravel</li>
+          <li>PHP</li>
+          <li>MySQL</li>
+          <li>Redis</li>
+          <li>Docker</li>
+          <li>REST APIs</li>
+          <li>Queue-based Systems</li>
+          <li>Vector Search (Cosine Similarity)</li>
+          <li>AI Integration (LLMs & Embeddings)</li>
+        </ul>
+      </div>
+      
+    </div>
+    
+    
+  </header>
+
+  <section>
+    <h2>💬 About Me</h2>
+      <p>
+        Backend Software Engineer focused on Laravel and high-performance API systems. 
+        I design and build maintainable architectures using clean code principles, with strong attention to scalability, performance, and long-term maintainability.
+      </p>
+
+      <p>
+        My work is centered on decoupled systems, queue-based processing, and database optimization, using tools like MySQL, Redis, Docker, and Laravel Horizon in production environments.
+      </p>
+      <p>
+        Recently, I have been exploring retrieval-based architectures and AI-integrated backend systems using embeddings and semantic search to build context-aware applications.
+      </p>
+      <p>
+        Currently focused on building production-grade backend systems with emphasis on performance, scalability, and intelligent data processing pipelines.
+      </p>
+  </section>
+
+  
+
+  <section>
+    <h2>💡 Backend Engineering & System Design</h2>
+    <h4>Projects in this section focus on system architecture, scalability, and backend design decisions including service layering, performance tuning, and maintainable API structures.</h4>
+
+    <div class="project">
+      <img src="images/portfolio-1.png" alt="EngeneeringInsights" width="180"/>
+      <div class="project-content">
+        <a href="https://github.com/limanetolimaneto/Laravel-Performance-Business-API" target="_blank">
+          <strong>Laravel Backend Performance & Scalability API</strong> 
+        </a>  
+        <p>
+           A backend engineering project built with Laravel, focused on performance, scalability, and real-world architectural decisions commonly found in production-grade systems.
+        </p>
+      </div>
+    </div> 
+    
+    <div class="project">
+      <img src="images/portfolio-2.png" alt="EngeneeringInsights" width="180"/>
+      <div class="project-content">
+        <a href="https://github.com/limanetolimaneto/extensibility" target="_blank">
+          <strong>Architecting for Extensibility</strong> 
+        </a>  
+        <p>
+           A deep dive into high-performance architecture using Reflection and Interfaces to build highly decoupled and scalable systems.
+        </p>
+      </div>
+    </div> 
+
+    <div class="project">
+      <img src="images/rag.png" alt="LaravelAIKnowledgeBaseRAG" width="180"/>
+      <div class="project-content">
+        <a href="https://github.com/limanetolimaneto/Laravel-RAG" target="_blank">
+          <strong>Laravel AI Knowledge Base (RAG)</strong> 
+        </a>  
+        <p>
+           A backend engineering system that extends traditional Laravel architecture with Retrieval-Augmented Generation (RAG), 
+          integrating LLMs and vector embeddings into a scalable, queue-driven pipeline.
+        </p>
+      </div>
+    </div> 
+    
+  </section>
+  
+  <section>
+    <h2>💻 Delivered Systems</h2>
+    <h4>
+      Production-ready applications built to deliver complete user-facing solutions, focusing on functionality, stability, and clean implementation of backend and frontend features.
+    </h4>
+    <div class="project">
+      <img src="images/portfolio-3.png" alt="Keyhpsafe project preview" width="180"/>
+      <div class="project-content">
+        <a href="https://github.com/limanetolimaneto/keyhpsafe" target="_blank">
+          <strong>Keyhpsafe (Full Stack – Laravel & React)</strong>
+        </a>
+        <p>
+          A local task management tool built with Laravel and React to support 
+          community work in recording and analyzing criminal incidents and accidents. 
+          It features user authentication (Laravel Sanctum), data storage in MySQL, 
+          map-based zone control with React-Leaflet, PDF report generation (Laravel DomPDF), 
+          and image handling with Intervention Image.
+        </p>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="images/portfolio-4.png" alt="Getdata project preview" width="180"/>
+      <div class="project-content">
+        <a href="https://github.com/limanetolimaneto/getdata" title="Coming soon" target="_blank">
+          <strong>Getdata (React)</strong>
+        </a>
+        <p>
+          A lightweight local CRUD system, built entirely with React and an Express-based data layer. 
+          It requires no user authentication, making it ideal for personal use or local collaborative environments.
+        </p>
+      </div>
+    </div>
+  
+  
+    <div class="project">
+      <img src="images/magimagi.png" alt="Magimagi project preview" width="180"/>
+        <div class="project-content">
+          <a href="https://github.com/limanetolimaneto/magimagi" title="Coming soon" target="_blank">
+            <strong>Magimagi (Python / Flask)</strong>
+          </a>
+          <p>
+            A task management system built with Python (Flask) and Node.js, featuring WhatsApp integration via whatsapp-web.js and a Firefox extension for enhanced productivity workflows.
+          </p>
+        </div>
+    </div>  
+  </section>
+  
+  <!-- <section>
+    <h2>🛠️ Tools</h2> -->
+
+    <!-- <div class="project">
+      <img src="images/newProject.png" alt="DecoyLeadTool" />
+      <div class="project-content">
+        <a href="https://github.com/limanetolimaneto/DecoyLeadTool" target="_blank">
+          <strong>Decoy Lead Tool</strong>
+        </a>
+        <p>
+           A brief demonstration Laravel application focused on integration with the MiniCRM backend, designed to insert and monitor decoy leads in real time
+        </p>
+      </div>
+    </div> -->
+    
+    <!-- <div class="project">
+      <img src="images/newProject.png" alt="AuthDemoApp" />
+      <div class="project-content">
+        <a href="https://github.com/limanetolimaneto/AuthDemoApp" target="_blank">
+          <strong>AuthDemoApp</strong>
+        </a>
+        <p>
+          Clean, modern Laravel + React app demonstrating authentication, responsive design, and structured components.
+        </p>
+      </div>
+    </div> -->
+    
+    <!-- <div class="project">
+      <img src="images/newProject.png" alt="Register Flow UI component" />
+      <div class="project-content">
+        <a href="https://github.com/limanetolimaneto/signup_flow" target="_blank">
+          <strong>Sign-up Flow</strong>
+        </a>
+        <p>
+          A reusable flow component for registration processes, designed for easy integration into larger
+          systems. Includes validation logic, modular input components, and step-based form progression.
+        </p>
+      </div>
+    </div> -->
+    
+    <!-- <div class="project">
+      <img src="images/newProject.png" alt="PHP Email Sending Script" />
+      <div class="project-content">
+        <a href="https://github.com/limanetolimaneto/PHP-Email_Sending_Script" target="_blank">
+          <strong>Simple PHP Email Sending Script Using PHPMailer with SMTP Authentication</strong>
+        </a>
+        <p>
+          This PHP script demonstrates how to send emails securely using the PHPMailer library with SMTP authentication through Gmail's SMTP server. 
+          It includes setting up the SMTP connection, configuring encryption (TLS), and sending HTML-formatted emails with a fallback plain-text version. 
+          Ideal for beginners learning to integrate email functionality in PHP applications.
+        </p>
+         <p>
+       <a href="https://php-email-sending-script.onrender.com/" target="_blank">
+        Try the Live Demo Online
+      </a>
+    </p>
+      </div>
+    </div> -->
+  <!-- </section> -->
+
+  <!-- <section>
+    <h2>🧪 Experiments & Ongoing Projects</h2>
+
+    <div class="project">
+      <img src="images/cyberchommie.png" alt="Cyberchommie concept system" />
+      <div class="project-content">
+        <a href="https://github.com/limanetolimaneto/cyberboys" target="_blank">
+          <strong>Cyberchommies (Experimental UI / Concept System)</strong>
+        </a>
+        <p>
+          Cyberchommie is a gamified learning platform created to engage disconnected youth. 
+          Through a task-based reward system, students earn credits by completing challenges and exchange them for handcrafted items. 
+          The project blends technology, music, and peer collaboration to promote meaningful learning experiences.
+        </p>
+      </div>
+    </div>
+  </section> -->
+
+  <footer>
+    <p>
+      Connect with me:
+        <a href="https://github.com/limanetolimaneto" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/f-b-lima-neto/" target="_blank">LinkedIn</a> |
+        <a href="mailto:limaneto.sist@gmail.com">Email</a>
+    </p>
+    <div class="last-updated">
+      Last updated: August 2025
+    </div>
+  </footer>
+</body>
+</html>
