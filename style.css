@@ -14,8 +14,8 @@ body {
     height: 100%;
     overflow: hidden;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* background-color: #f7fafb; */
-    background-image: #f7fafb;
+    background: #f7fafb;
+    /* background-image: #f7fafb; */
         /* linear-gradient(
             to top,
             teal,
