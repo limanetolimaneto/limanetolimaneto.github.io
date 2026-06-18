@@ -14,12 +14,13 @@ body {
     height: 100%;
     overflow: hidden;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image:
+    /* background-image:
         linear-gradient(
             to top,
             teal,
             white
-        );
+        ); */
+    background: #f7fafb;
 }
 
 /* MAIN LAYOUT */
