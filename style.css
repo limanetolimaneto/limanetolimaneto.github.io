@@ -1,0 +1,394 @@
+/* RESET PAGE*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #00212d;
+    color: lightblue;
+}
+
+/* MAIN LAYOUT */
+
+.portfolio {
+    display: grid;
+    grid-template-rows: 30fr 54fr 6fr;
+    width: 100vw;
+    height: 100vh;
+    padding: 5vh 10vw;
+    gap: 10px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| HEADER
+|--------------------------------------------------------------------------
+*/
+
+.header {
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    align-items: center;
+}
+
+/* | ----- HEADER - Foto ----- |*/
+
+.profile {
+    overflow: hidden;
+    border-radius: 12px 0 0 0;
+}
+
+.profile img {
+    width: 80%;
+    height: 80%;
+    /* object-fit: cover; */
+    display: block;
+}
+
+/* | ----- HEADER - Conteudo central ----- |*/
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#hero{
+    cursor: pointer;
+}
+
+.hero h2 {
+    color: teal;
+    margin: 4px 0;
+}
+
+hr{
+    color: teal;
+}
+
+a.mainLinks{
+    color: lightblue;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+a.mainLinks:visited{
+    color: lightblue;
+    text-decoration: none;
+}
+
+.social-links{
+    padding: 16px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* | ----- HEADER - Menu ----- |*/
+
+.navigation {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px;
+    position: relative;
+    gap: 4%;
+}
+
+.navigation h4{
+    color: teal;
+    text-align: left;
+    width: 100%;
+}
+
+.group{
+    cursor: pointer;
+    color: cadetblue;
+    width: 100%;
+    height: 90%;
+    font-size: 1.2rem;
+    box-shadow: -1px 1px 1px 1px teal;
+    border-radius: 4px;
+
+}
+
+.group .title { display: block; }
+.group:hover .title { display: none; }
+.group .items { display: none; }
+.group:hover .items { display: block; }
+
+.title{
+    text-align: center;
+    height: 100%;
+    align-content: center;
+    font-weight: bold;
+}
+
+.items{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    padding: 6px;
+    text-align: center;
+    align-content: center;
+}
+
+.items img{
+    flex: 1;        
+    width: 100px;
+    height: 40px;      
+    border-radius: 4px;   
+}
+
+.group span{
+    background-color: teal;
+    color: white;
+    padding: 6px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+#g1_p1_desc, #g1_p2_desc, #g1_p3_desc, #g2_p1_desc, #g2_p2_desc, #g2_p3_desc {
+    display:none;
+    position: absolute;
+    margin-top: -30px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| CONTENT
+|--------------------------------------------------------------------------
+*/
+
+.content {
+    padding: 12px;
+    overflow: hidden;
+    box-shadow: 
+    inset 15px 0 12px -12px rgba(0, 0, 0, 0.5),  
+    inset -15px 0 12px -12px rgba(0, 0, 0, 0.5); 
+}
+
+.content .home{
+    padding: 6px 0 14px 26px;
+
+}
+
+.content .home p{
+    text-indent: 40px;
+}
+
+.content h3 {
+    color: teal;
+}
+
+/* | ----- CONTENT - Grupos ----- |*/
+
+.mainScreen{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 6% 88% 6%;
+    padding: 10px;
+}
+.middleScreen{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.middleScreen .middleImg {
+    width: 80%;
+    height: 80%;
+}
+.middleScreen a, .middleScreen a:visited{
+    background-color: lightblue;
+    color: #00212d;
+    display: flex;
+    align-items: center;
+    padding: 4px 20px;
+    border-radius: 4px;
+}
+.middleScreen .middleGit {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.leftScreen, .rightScreen{
+    height: 100%;
+    text-align: center;
+    font-size: 3rem;
+}
+.leftScreen p, .rightScreen p{
+    cursor: pointer;
+}
+.title_g1, .summary_g1{
+    background-color: rgba(1, 4, 36, 0.401);
+    box-shadow: -2px 2px 1px 1px rgba(0, 128, 128, 0.316);
+    color: lightblue;
+    border-radius: 4px;
+    padding: 8px;
+}
+.title_g1, .title_g2{
+    font-size: 1.4rem;
+}
+.summary_g1, .summary_g2{
+    font-size: 1rem;
+    margin: 20px auto;
+}
+.title_g2, .summary_g2{
+    background-color: rgba(61, 114, 54, 0.188);
+    box-shadow: -2px 2px 1px 1px rgba(0, 128, 128, 0.316);
+    color: lightblue;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.warning{
+    text-align: center;
+    font-size: 2rem;
+    align-content: center;
+    height: 100%;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| FOOTER
+|--------------------------------------------------------------------------
+*/
+
+.footer {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: lightblue;
+    border-radius: 0 0 12px 12px;
+    font-size: 0.9rem;
+    box-shadow: 0px 2px 2px teal;
+}
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+| MOBILE
+|--------------------------------------------------------------------------
+*/
+
+@media (max-width: 390px) {
+    html, body, .portfolio, .content{
+        overflow: auto;
+    }
+    .portfolio {
+        grid-template-rows: repeat(3, auto);
+        height: fit-content;
+        padding: 0;
+    }
+    .header{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        height: fit-content;
+    }
+    .profile img{
+        margin: auto;
+    }
+    .hero{
+        text-align: center;
+    }
+    .content{
+        height: fit-content;
+    }
+    .mainScreen{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        gap: 10px;
+    }
+    .middleScreen{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);    
+        gap:20px;
+    }
+    .middleScreen .middleImg {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+@media (min-width: 390px) and (max-width: 768px) {
+    html, body, .portfolio, .content{
+        overflow: auto;
+    }
+    .portfolio {
+        grid-template-rows: repeat(3, auto);
+        height: fit-content;
+        padding: 0;
+    }
+    .header{
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: auto auto; 
+    }
+    .navigation{
+        grid-column: span 2;
+    }
+    .content{
+        height: fit-content;
+    }
+     .mainScreen{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        gap: 10px;
+    }
+     .middleScreen{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);    
+        gap:20px;
+    }
+    .middleScreen .middleImg {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 1440px){
+    .portfolio{
+        padding: 2vh 2vw;
+    } 
+}    
+/*
+|--------------------------------------------------------------------------
+| TABLET
+|--------------------------------------------------------------------------
+*/
+
+/* @media (min-width: 390px) and (max-width: 768px) {
+    html, body, .portfolio, .content{
+        overflow: auto;
+    }
+    .header{
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: auto auto; 
+    }
+    .navigation{
+        grid-column: span 2;
+    }
+    .content{
+        height: fit-content;
+    }
+} */
