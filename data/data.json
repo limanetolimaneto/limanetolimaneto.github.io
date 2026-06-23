@@ -1,1 +1,51 @@
 
+{
+    "groups":{
+        "analized": [
+            {
+                "id":1,
+                "title":"Laravel Backend Performance & Scalability API",
+                "summary":" A backend engineering project built with Laravel, focused on performance, scalability, and real-world architectural decisions commonly found in production-grade systems.",
+                "img":"img/analized_1.png",
+                "link":"https://github.com/limanetolimaneto/Laravel-Performance-Business-API"
+            },
+            {
+                "id":2,
+                "title":"Architecting for Extensibility",
+                "summary":"A deep dive into high-performance architecture using Reflection and Interfaces to build highly decoupled and scalable systems.",
+                "img":"img/analized_2.png",
+                "link":"https://github.com/limanetolimaneto/extensibility"
+            },
+            {
+                "id":3,
+                "title":"Laravel AI Knowledge Base (RAG)",
+                "summary": "A backend engineering system that extends traditional Laravel architecture with Retrieval-Augmented Generation (RAG), integrating LLMs and vector embeddings into a scalable, queue-driven pipeline.",
+                "img":"img/analized_3.png",
+                "link":"https://github.com/limanetolimaneto/Laravel-RAG"
+            }
+        ],
+        "delivered":[
+             {
+                "id":1,
+                "title":"Keyhpsafe (Full Stack - Laravel & React)",
+                "summary":"A local task management tool built with Laravel and React to support community work in recording and analyzing criminal incidents and accidents. It features user authentication (Laravel Sanctum), data storage in MySQL, map-based zone control with React-Leaflet, PDF report generation (Laravel DomPDF), and image handling with Intervention Image.",
+                "img":"img/delivered_1.png",
+                "link":"https://github.com/limanetolimaneto/keyhpsafe"
+            },
+            {
+                "id":2,
+                "title":"Getdata (React)",
+                "summary":" A lightweight local CRUD system, built entirely with React and an Express-based data layer. It requires no user authentication, making it ideal for personal use or local collaborative environments.",
+                "img":"img/delivered_2.png",
+                "link":"https://github.com/limanetolimaneto/getdata"
+            },
+            {
+                "id":3,
+                "title":"Magimagi (Python / Flask)",
+                "summary": "A task management system built with Python (Flask) and Node.js, featuring WhatsApp integration via whatsapp-web.js and a Firefox extension for enhanced productivity workflows.",
+                "img":"img/delivered_3.png",
+                "link":"https://github.com/limanetolimaneto/magimagi"
+            }
+        ]
+    }
+}
